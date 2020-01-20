@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         //////retrofit result//////////
         //private constructor = object make in that class inside method
         final Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())  //encoding to json
                 .build();
 
         ApiService apiService = retrofit.create(ApiService.class);
